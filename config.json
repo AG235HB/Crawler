@@ -1,0 +1,119 @@
+[
+    {
+        "ReglamentName": "Test on Raspberry Pi",
+        "ReglamentCode": "RPi",
+        "ReglamentDatasources": [
+            {
+                "DataSourceName": "Raspberry Pi",
+                "DataSourceType": "FTP",
+                "ConnectionParameters": {
+                    "Host": "raspberrypi",
+                    "Port": null,
+                    "Timeout": 5000,
+                    "Username": "pi",
+                    "Password": ""
+                },
+                "Checks": [
+                    {
+                        "Active": false,
+                        "CheckType": "Ping",
+                        "AdditionalParameters": null
+                    },
+                    {
+                        "Active": false,
+                        "CheckType": "Connect",
+                        "AdditionalParameters": null
+                    }
+                ]
+            },
+            {
+                "DataSourceName": "Raspberry Pi",
+                "DataSourceType": "SFTP",
+                "ConnectionParameters": {
+                    "Host": "raspberrypi",
+                    "Port": null,
+                    "Timeout": 5000,
+                    "Username": "pi",
+                    "Password": ""
+                },
+                "Checks": [
+                    {
+                        "Active": false,
+                        "CheckType": "Connect",
+                        "AdditionalParameters": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ReglamentName": "Регламент получения данных (обмена данными) из Е",
+        "ReglamentCode": "E",
+        "ReglamentDatasources": [
+            {
+                "DataSourceName": "Е",
+                "DataSourceType": "FTPS",
+                "ConnectionParameters": {
+                    "Host": "",
+                    "Port": 21,
+                    "Timeout": 5000,
+                    "Username": "",
+                    "Password": "",
+                    "IgnoreSslErrors": true
+                },
+                "Checks": [
+                    {
+                        "Active": true,
+                        "CheckType": "Ping",
+                        "AdditionalParameters": null
+                    },
+                    {
+                        "Active": true,
+                        "CheckType": "Connect",
+                        "AdditionalParameters": null
+                    },
+                    {
+                        "Active": false,
+                        "CheckType": "List",
+                        "AdditionalParameters": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ReglamentName": "Регламент информационного взаимодействия между ",
+        "ReglamentCode": "EXPRESS",
+        "ReglamentDatasources": [
+            {
+                "DataSourceName": "Р",
+                "DataSourceType": "FTPS",
+                "ConnectionParameters": {
+                    "Host": "",
+                    "Port": 21,
+                    "Timeout": 5000,
+                    "Username": "",
+                    "Password": "",
+                    "IgnoreSslErrors": true
+                },
+                "Checks": [
+                    {
+                        "Active": true,
+                        "CheckType": "Ping",
+                        "AdditionalParameters": null
+                    },
+                    {
+                        "Active": true,
+                        "CheckType": "Connect",
+                        "AdditionalParameters": null
+                    },
+                    {
+                        "Active": false,
+                        "CheckType": "List",
+                        "AdditionalParameters": null
+                    }
+                ]
+            }
+        ]
+    }
+]

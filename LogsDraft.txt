@@ -1,0 +1,77 @@
+Facility                            "MonitoringDashboards.Crawler"          //встроенное поле
+ReglamentName                       "Test on Raspberry Pi"                  //имя регламента
+ReglamentCode                       "235"                                   //код регламента
+DatasourceName                      "Raspberry Pi"                          //имя источника данных для текущего регламента
+DatasourceType                      "FTP"                                   //протокол службы, осуществляющей отправку данных
+DatasourceHost(:Port)               "raspberrypi:21"                        //адрес хоста, где развёрнута служба
+Username                            null
+DatasourceCheckType                 "Ping"                                  //тип проверки хоста, приведённый к строке                  //!!!
+DatasourceCheckSubject              null                                    //здесь будет маска для поиска файлов на хосте, например
+DatasourceCheckParameters           null                                    //оно вроде не пригодится
+DatasourceCheckResult               "PASSED"                                //результат выполнения проверки(PASSED|FAILED)                  //!!!
+DatasourceCheckResultMessage        null                                    //здесь будет сообщение при FAILED
+
+Facility                            "MonitoringDashboards.Crawler"          //встроенное поле
+ReglamentName                       "Test on Raspberry Pi"                  //имя регламента
+ReglamentCode                       "235"                                   //код регламента
+DatasourceName                      "Raspberry Pi"                          //имя источника данных для текущего регламента
+DatasourceType                      "FTP"                                   //протокол службы, осуществляющей отправку данных
+DatasourceHost(:Port)               "raspberrypi:21"                        //адрес хоста, где развёрнута служба
+Username                            null
+DatasourceCheckType                 "Ping"                                  //тип проверки хоста, приведённый к строке
+DatasourceCheckSubject              null                                    //здесь будет маска для поиска файлов на хосте, например
+DatasourceCheckParameters           null                                    //оно вроде не пригодится
+DatasourceCheckResult               "FAILED"                                //результат выполнения проверки(PASSED|FAILED)
+DatasourceCheckResultMessage        "хост не отвечает"                      //здесь будет сообщение при FAILED или доп. информация для PASSED
+
+Facility                            "MonitoringDashboards.Crawler"          //встроенное поле
+ReglamentName                       "Test on Raspberry Pi"                  //имя регламента
+ReglamentCode                       "235"                                   //код регламента
+DatasourceName                      "Raspberry Pi"                          //имя источника данных для текущего регламента
+DatasourceType                      "FTP"                                   //протокол службы, осуществляющей отправку данных
+DatasourceHost(:Port)               "raspberrypi:21"                        //адрес хоста, где развёрнута служба
+Username                            null
+DatasourceCheckType                 "Connect"                               //тип проверки хоста, приведённый к строке
+DatasourceCheckSubject              null                                    //здесь будет маска для поиска файлов на хосте, например
+DatasourceCheckParameters           null                                    //оно вроде не пригодится
+DatasourceCheckResult               "PASSED"                                //результат выполнения проверки(PASSED|FAILED)
+DatasourceCheckResultMessage        null                                    //здесь будет сообщение при FAILED или доп. информация для PASSED
+
+Facility                            "MonitoringDashboards.Crawler"          //встроенное поле
+ReglamentName                       "Test on Raspberry Pi"                  //имя регламента
+ReglamentCode                       "235"                                   //код регламента
+DatasourceName                      "Raspberry Pi"                          //имя источника данных для текущего регламента
+DatasourceType                      "FTP"                                   //протокол службы, осуществляющей отправку данных
+DatasourceHost(:Port)               "raspberrypi:21"                        //адрес хоста, где развёрнута служба
+Username                            null
+DatasourceCheckType                 "Connect"                               //тип проверки хоста, приведённый к строке
+DatasourceCheckSubject              null                                    //здесь будет маска для поиска файлов на хосте, например
+DatasourceCheckParameters           null                                    //оно вроде не пригодится
+DatasourceCheckResult               "FAILED"                                //результат выполнения проверки(PASSED|FAILED)
+DatasourceCheckResultMessage        "Timeout всё..."                        //здесь будет сообщение при FAILED или доп. информация для PASSED
+
+Facility                            "MonitoringDashboards.Crawler"          //встроенное поле
+ReglamentName                       "Test on Raspberry Pi"                  //имя регламента
+ReglamentCode                       "235"                                   //код регламента
+DatasourceName                      "Raspberry Pi"                          //имя источника данных для текущего регламента
+DatasourceType                      "FTP"                                   //протокол службы, осуществляющей отправку данных
+DatasourceHost(:Port)               "raspberrypi:21"                        //адрес хоста, где развёрнута служба
+Username                            null
+DatasourceCheckType                 "List"                                  //тип проверки хоста, приведённый к строке
+DatasourceCheckSubject              null                                    //здесь будет маска для поиска файлов на хосте, например
+DatasourceCheckParameters           null                                    //оно вроде не пригодится
+DatasourceCheckResult               "PASSED"                                //результат выполнения проверки(PASSED|FAILED)
+DatasourceCheckResultMessage        "1.txt; 2.txt; etc."                    //здесь будет сообщение при FAILED или доп. информация для PASSED
+
+Facility                            "MonitoringDashboards.Crawler"          //встроенное поле
+ReglamentName                       "Test on Raspberry Pi"                  //имя регламента
+ReglamentCode                       "235"                                   //код регламента
+DatasourceName                      "Raspberry Pi"                          //имя источника данных для текущего регламента
+DatasourceType                      "FTP"                                   //протокол службы, осуществляющей отправку данных
+DatasourceHost(:Port)               "raspberrypi:21"                        //адрес хоста, где развёрнута служба
+Username                            null
+DatasourceCheckType                 "FileExtension"                         //тип проверки хоста, приведённый к строке
+DatasourceCheckSubject              "*.doc"                                 //здесь будет маска для поиска файлов на хосте, например
+DatasourceCheckParameters           null                                    //оно вроде не пригодится
+DatasourceCheckResult               "PASSED"                                //результат выполнения проверки(PASSED|FAILED)
+DatasourceCheckResultMessage        "найдено {count} файлов"                //здесь будет сообщение при FAILED или доп. информация для PASSED
